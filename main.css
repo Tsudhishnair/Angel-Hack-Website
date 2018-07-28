@@ -86,3 +86,7 @@
 {
  background-color: rgb(226, 225, 225);
 }
+.dash-nav-padding
+{
+  padding-left: 0px !important;
+}
