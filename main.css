@@ -21,6 +21,11 @@
   height: 8rem;
   position: relative;
   top: -1.5rem;
+  width:101%;
+}
+.main
+{
+  width: fit-content;
 }
 .fooot
 {
