@@ -59,10 +59,7 @@
 .menu-dash
 {
   background-color: #fc8019;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%; 
+  height: 102vh; 
 }
 .menu-dash-item
 {
@@ -87,5 +84,5 @@
 }
 .content-dash
 {
- 
+ background-color: rgb(226, 225, 225);
 }
