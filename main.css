@@ -56,41 +56,31 @@
 /* ----------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
-.menu-dash
-{
-  background-color: #fc8019;
-  height: 102vh; 
-}
-.menu-dash-item
-{
-   margin-top: 2rem;
-   word-spacing: 0.2rem;
-}
-.brand-text-styles
-{
-  color: whitesmoke;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  letter-spacing: 4px;
-}
 
-.textstyledash{
-  color: whitesmoke;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.content-dash
-{
- background-color: rgb(226, 225, 225);
-}
 .dash-nav-padding
 {
   padding-left: 0px !important;
 }
 .navbar
 {
-  background-color: #ff7300d8 !important;
+  background-color: #f8913dd8 !important;
+}
+.dash-brand
+{
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.dash-item-color
+{
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+.dash-content
+{
+  background-color: rgb(243, 235, 235);
+  margin-top: 2rem;
 }
