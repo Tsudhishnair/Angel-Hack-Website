@@ -52,3 +52,40 @@
   top: 2rem;
   font-weight: bold;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+.menu-dash
+{
+  background-color: #fc8019;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; 
+}
+.menu-dash-item
+{
+   margin-top: 2rem;
+   word-spacing: 0.2rem;
+}
+.brand-text-styles
+{
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.textstyledash{
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.content-dash
+{
+ 
+}
