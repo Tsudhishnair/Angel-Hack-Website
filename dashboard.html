@@ -11,9 +11,25 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-    
+
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDm_WOx_EKV3O2DxCShxTCxGIHnMsuoLMs",
+      authDomain: "speebuy.firebaseapp.com",
+      databaseURL: "https://speebuy.firebaseio.com",
+      projectId: "speebuy",
+      storageBucket: "speebuy.appspot.com",
+      messagingSenderId: "231824436530"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
 </head>
 </head>
 
@@ -21,12 +37,12 @@
   <div class="columns">
     <div class="column is-one-fifth menu-dash has-text-centered ">
       <div class="menu-dash-item">
-        <i class="bars icon" style="font-size: 1.2rem;color: ghostwhite"></i>&nbsp;
+        <i class="bars icon" style="font-size: 1rem;color: ghostwhite"></i>&nbsp;
         <span class="brand-text-styles">SpeeBuy</span>
       </div>
       <div style="margin-top: 3.5rem;">
         <div class="menu-dash-item">
-          <i class="fas fa-home" style="font-size: 1.2rem;color: ghostwhite ;word-spacing:2rem;padding-right: 0.2rem;"></i>
+          <i class="fas fa-home" style="font-size: 1.2rem;color: ghostwhite ;"></i>
           <span class="textstyledash">Dashboard</span>
         </div>
         <div class="menu-dash-item">
@@ -55,56 +71,45 @@
         <div class="column"></div>
       </div>
       <div class="columns">
-        <div class="column ">
+        <div class="column is-narrow ">
           <div class="box">
-            <table class="table is-fullwidth is-striped">
+            <table class="table is-hoverable is-striped" id="shop-table">
               <thead>
                 <tr>
+                  <th>Method</th>
                   <th>No of Items</th>
-                  <th>item list</th>
-                  <th>Pick up/Delivery</th>
                   <th>Time of Service</th>
                   <th>Status</th>
                   <th>Flag</th>
-
                 </tr>
                 <tr>
-                  <td>7</td>
-                  <td class="has-text-weight-semibold">Bread Butter Jam Egg Milk Onion</td>
-                  <td class="has-text-centered">
-                    <i class="fas fa-male fa-lg"></i>
-                  </td>
+                  <td>Pickup</td>
+                  <td class="has-text-centered">7</td>
                   <td>8:35pm</td>
-                  <td>Packing</td>
+                  <td>Dispatched</td>
                   <td>
                     <i class="fas fa-flag fa-lg" style="color: rgb(108, 156, 108);"></i>
                   </td>
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td class="has-text-weight-semibold">Bread Butter Jam </td>
-                  <td class="has-text-centered">
-                    <i class="fas fa-motorcycle "></i>
-                  </td>
+                  <td>Delivery</td>
+                  <td class="has-text-centered">3</td>
                   <td>8:35pm</td>
                   <td>Packing</td>
                   <td>
-                    <i class="fas fa-flag fa-lg" style="color: rgb(108, 156, 108);"></i>
+                    <i class="fas fa-flag fa-lg" style="color: rgb(226, 255, 61);"></i>
                   </td>
                 </tr>
                 <tr>
-                  <td>1</td>
-                  <td class="has-text-weight-semibold">Bread </td>
-                  <td>
-
-                  </td>
+                  <td>Pickup</td>
+                  <td class="has-text-centered">1</td>
                   <td>8:35pm</td>
-                  <td>Arived</td>
+                  <td>Pending</td>
                   <td>
                     <i class="fas fa-flag fa-lg" style="color: rgb(179, 77, 77);"></i>
                   </td>
                 </tr>
-              </thead>  
+              </thead>
             </table>
           </div>
         </div>
@@ -112,5 +117,5 @@
     </div>
   </div>
 </body>
-
+<script src="app.js"></script>
 </html>
