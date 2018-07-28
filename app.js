@@ -1,11 +1,13 @@
-$(document).ready(function() {
 
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-
-  });
-});
+let cli = document.querySelectorAll(".modal-view");
+let clicklist = cli.length;
+function modalview() {
+  for (let i = 0; i < clicklist; i++) {
+    cli = addEventListener("click",function(){
+      document.querySelector(".modal").classList.add("is-active");
+    });
+    
+    document.querySelector(".modal-close-btn").classList.remove("is-active");  
+}
+}
+window.addEventListener("load",modalview(),false);
