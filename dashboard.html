@@ -34,8 +34,8 @@
 <body>
   <nav class="navbar " role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="#" class="navbar-item">
-        <span class="dash-brand">SpeeBuy</span>
+      <a href="./landingpage.html" class="navbar-item">
+        <span class="dash-brand" >SpeeBuy</span>
       </a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -127,7 +127,7 @@
               <i class="fas fa-truck fa-lg has-text-danger"></i>
             </div>
             <div class="column has-text-centered">
-              <span class="has-text-danger has-text-weight-semibold">Active</span>
+              <span class="has-text-danger has-text-weight-semibold ">Active</span>
               <br> Delivery&nbsp;Service
             </div>
             <div class="column">
@@ -184,8 +184,8 @@
           </table>
         </section>
         <footer class="modal-card-foot">
-          <button class="button is-info has-text-weight-semibold">Accept</button>
-          <button class="button is-danger has-text-weight-semibold">Decline</button>
+          <button class="button is-info has-text-weight-semibold modal-close-btn" id="accept">Accept</button>
+          <button class="button is-danger has-text-weight-semibold modal-close-btn" id="decline">Decline</button>
         </footer>
       </div>
     </div>
@@ -194,12 +194,12 @@
     <!-- *******************-->
 
 
-    <div class="columns  card is-narrow  is-multiline is-centered  ">
-      <div class="column is-offset-1">
+    <div class="columns card is-narrow  is-multiline is-centered" style="padding: 10px;">
+      <div class="column " style="margin-left:2.5rem;">
         <div class="columns is-multiline ">
           <div class="column is-narrow ">
             <span class="has-text-weight-semibold is-size-4"> Current Orders </span>
-            <div class="box" style="border: 2px solid black;padding: 10px;">
+            <div class="box" class="box-style" style="box-shadow:1px 3px 2px 4px #c3bfa7 !important;">
               <table class="table is-striped">
                 <thead>
                   <tr class="modal-view">
@@ -271,9 +271,9 @@
           </div>
         </div>
       </div>
-      <div class="column is-half">
+      <div class="column is-half ">
         <span class="has-text-weight-semibold is-size-4">Todays Sales History</span>
-        <div class="box">
+        <div class="box" style="box-shadow:1px 3px 2px 4px #c3bfa7 !important;">
           <div id="tester" style="width:100%;height:250px;"></div>
           <span class="has-text-weight-semibold has-text-centered" style="margin-left: 4rem;">Time-Order graph</span>
         </div>

@@ -5,4 +5,24 @@ Plotly.plot( TESTER, [{
     y: [1, 2, 4, 8, 16] }], { 
     margin: { t: 0 } } );
 
-      
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  $(function () {
+    $('.modal-view').click(function () {
+      $('.modal').addClass('is-active')
+    })
+  
+    $('.modal-close-btn').click(function () {
+      $('.modal').removeClass('is-active')
+    })
+  });
+
+
+
+  
+document.
