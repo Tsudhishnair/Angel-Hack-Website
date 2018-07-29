@@ -49,9 +49,7 @@ $(function () {
     })
 
     $('#accept').click(function() {
-      orderRef.set({
-        status: 2
-      })
+      orderRef.child('status').set(2)
     })
 
     // for (key in items) {
