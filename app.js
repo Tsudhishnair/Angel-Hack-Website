@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(function () {
   $('.modal-view').click(function() {
     $('.modal').addClass('is-active')
@@ -11,7 +10,6 @@ $(function () {
   var shopRef = firebase.database().ref('/Shops/1')
   var orderRef = firebase.database().ref('/orders')
 });
-=======
             
 var data = [
   {
@@ -22,4 +20,3 @@ var data = [
 ];
 
 Plotly.newPlot('myDiv', data);
->>>>>>> 03ec263bcab201859bd6da36fded78a4a80aebc1
