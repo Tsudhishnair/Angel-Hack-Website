@@ -68,220 +68,223 @@
     </div>
   </nav>
   <div class="section hero dash-content-body">
-  <div class="columns" style="margin-top: 2rem;">
-    <div class="column is-offset-1 is-10">
-      <div class="box">
-        <div class="columns">
-          <div class="column">
-            <i class="fas fa-store"></i> &nbsp;
-            <span class="has-text-weight-semibold">3 New Orders </span>
-          </div>
-          <div class="column has-text-centered is-5">
-            <span class="has-text-weight-semibold" style="letter-spacing: 0.4rem;">More SuperMarket</span>
-          </div>
-          <div class="column has-text-right">
-            <i class="fas fa-cog"></i> &nbsp;
-            <i class="fas fa-bell"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="columns section is-centered">
-    <div class="column  has-text-centered">
-      <div class="box box-style">
-        <div class="columns" style="padding:8px;">
-          <div class="column ">
-            <i class="far fa-money-bill-alt fa-lg has-text-info"></i>
-          </div>
-          <div class="column has-text-centered">
-            <span class="has-text-info has-text-weight-semibold"> $8213</span>
-            <br> Total&nbsp;Transcation
-          </div>
-          <div class="column">
-            <i class="fas fa-ellipsis-h has-text-info"></i>
+    <div class="columns" style="margin-top: 2rem;">
+      <div class="column is-offset-1 is-10">
+        <div class="box">
+          <div class="columns">
+            <div class="column">
+              <i class="fas fa-store"></i> &nbsp;
+              <span class="has-text-weight-semibold">3 New Orders </span>
+            </div>
+            <div class="column has-text-centered is-5">
+              <span class="has-text-weight-semibold" style="letter-spacing: 0.4rem;">More SuperMarket</span>
+            </div>
+            <div class="column has-text-right">
+              <i class="fas fa-cog"></i> &nbsp;
+              <i class="fas fa-bell"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="column has-text-centered">
-      <div class="box box-style">
-        <div class="columns" style="padding:8px;">
-          <div class="column ">
-            <i class="fas fa-star-half-alt fa-lg has-text-primary"></i>
+    <div class="columns section is-centered">
+      <div class="column  has-text-centered">
+        <div class="box box-style">
+          <div class="columns" style="padding:8px;">
+            <div class="column ">
+              <i class="far fa-money-bill-alt fa-lg has-text-info"></i>
+            </div>
+            <div class="column has-text-centered">
+              <span class="has-text-info has-text-weight-semibold"> $8213</span>
+              <br> Total&nbsp;Transcation
+            </div>
+            <div class="column">
+              <i class="fas fa-ellipsis-h has-text-info"></i>
+            </div>
           </div>
-          <div class="column has-text-centered">
-            <span class="has-text-primary has-text-weight-semibold">4.3</span>
-            <br> Shop&nbsp;Rating
+        </div>
+      </div>
+      <div class="column has-text-centered">
+        <div class="box box-style">
+          <div class="columns" style="padding:8px;">
+            <div class="column ">
+              <i class="fas fa-star-half-alt fa-lg has-text-primary"></i>
+            </div>
+            <div class="column has-text-centered">
+              <span class="has-text-primary has-text-weight-semibold">4.3</span>
+              <br> Shop&nbsp;Rating
+            </div>
+            <div class="column">
+              <i class="fas fa-ellipsis-h has-text-primary"></i>
+            </div>
           </div>
-          <div class="column">
-            <i class="fas fa-ellipsis-h has-text-primary"></i>
+        </div>
+      </div>
+      <div class="column has-text-centered">
+        <div class="box box-style">
+          <div class="columns" style="padding:8px;">
+            <div class="column ">
+              <i class="fas fa-truck fa-lg has-text-danger"></i>
+            </div>
+            <div class="column has-text-centered">
+              <span class="has-text-danger has-text-weight-semibold">Active</span>
+              <br> Delivery&nbsp;Service
+            </div>
+            <div class="column">
+              <i class="fas fa-ellipsis-h has-text-danger"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column  has-text-centered ">
+        <div class="box box-style ">
+          <div class="columns" style="padding:8px;">
+            <div class="column ">
+              <i class="far fa-clock fa-lg has-text-info"></i>
+            </div>
+            <div class="column has-text-centered">
+              <span class="has-text-info has-text-weight-semibold">Online</span>
+              <br> Speebuy&nbsp;Service
+            </div>
+            <div class="column">
+              <i class="fas fa-ellipsis-h has-text-info "></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="column has-text-centered">
-      <div class="box box-style">
-        <div class="columns" style="padding:8px;">
-          <div class="column ">
-            <i class="fas fa-truck fa-lg has-text-danger"></i>
-          </div>
-          <div class="column has-text-centered">
-            <span class="has-text-danger has-text-weight-semibold">Active</span>
-            <br> Delivery&nbsp;Service
-          </div>
-          <div class="column">
-            <i class="fas fa-ellipsis-h has-text-danger"></i>
-          </div>
-        </div>
+    <!-- Modal  -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title has-text-weight-bold">Item Order list</p>
+          <button class="delete modal-close-btn" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <table class="table is-fullwidth is-hoverable is-striped table-container">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Item</th>
+                <th>Count</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>MIlk</td>
+                <td>3</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Egg</td>
+                <td>12</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bread</td>
+                <td>1</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>apple</td>
+                <td>5</td>
+                <td>50</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td class="has-text-weight-bold">Total</td>
+                <td class="has-text-weight-bold">250/-</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-info has-text-weight-semibold">Accept</button>
+          <button class="button is-danger has-text-weight-semibold">Decline</button>
+        </footer>
       </div>
     </div>
-    <div class="column  has-text-centered ">
-      <div class="box box-style ">
-        <div class="columns" style="padding:8px;">
-          <div class="column ">
-            <i class="far fa-clock fa-lg has-text-info"></i>
-          </div>
-          <div class="column has-text-centered">
-            <span class="has-text-info has-text-weight-semibold">Online</span>
-            <br> Speebuy&nbsp;Service
-          </div>
-          <div class="column">
-            <i class="fas fa-ellipsis-h has-text-info "></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal  -->
-  <div class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title has-text-weight-bold">Item Order list</p>
-        <button class="delete modal-close-btn" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <table class="table is-fullwidth is-hoverable is-striped table-container">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Item</th>
-              <th>Count</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>MIlk</td>
-              <td>3</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Egg</td>
-              <td>12</td>
-              <td>70</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Bread</td>
-              <td>1</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>apple</td>
-              <td>5</td>
-              <td>50</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td></td>
-              <td class="has-text-weight-bold">Total</td>
-              <td class="has-text-weight-bold">250/-</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-info has-text-weight-semibold">Accept</button>
-        <button class="button is-danger has-text-weight-semibold">Decline</button>
-      </footer>
-    </div>
-  </div>
 
 
-  <!-- *******************-->
+    <!-- *******************-->
 
 
-  <div class="columns is-centered  ">
-    <div class="column is-offset-1">
-      <div class="columns is-multiline ">
-        <div class="column is-narrow ">
-          <div class="card" style="border: 2px solid black;padding: 10px;">
-            <span class="has-text-weight-semibold"> Current Order</span>
-            <table class="table is-striped">
-              <thead>
-                <tr>
-                  <th>Method</th>
-                  <th>Time</th>
-                  <th>Item's count</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody id="shop-items">
-                <tr class="modal-view">
-                  <td>Delivery</td>
-                  <td>10:40am</td>
-                  <td>15</td>
-                  <td>Pending</td>
-                </tr>
-                <tr class="modal-view">
-                  <td>Pickup</td>
-                  <td>11:40am</td>
-                  <td>1</td>
-                  <td>Pending</td>
-                </tr>
-                <tr class="modal-view">
-                  <td>Delivery</td>
-                  <td>11:10am</td>
-                  <td>3</td>
-                  <td>Shipping</td>
-                </tr>
-                <tr class="modal-view">
-                  <td>Devlivery</td>
-                  <td>10:40am</td>
-                  <td>15</td>
-                  <td>Pending</td>
-                </tr>
-                <tr class="modal-view">
-                  <td>Pickup</td>
-                  <td>11:40am</td>
-                  <td>1</td>
-                  <td>Pending</td>
-                </tr>
-                <tr class="modal-view">
-                  <td>Delivery</td>
-                  <td>11:10am</td>
-                  <td>3</td>
-                  <td>Shipping</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="columns is-centered  ">
+      <div class="column is-offset-1">
+        <div class="columns is-multiline ">
+          <div class="column is-narrow ">
+            <div class="box" style="border: 2px solid black;padding: 10px;">
+              <span class="has-text-weight-semibold"> Current Order</span>
+              <table class="table is-striped">
+                <thead>
+                  <tr>
+                    <th>Method</th>
+                    <th>Time</th>
+                    <th>Item's count</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="shop-items">
+                  <tr class="modal-view">
+                    <td>Delivery</td>
+                    <td>10:40am</td>
+                    <td>15</td>
+                    <td>Pending</td>
+                  </tr>
+                  <tr class="modal-view">
+                    <td>Pickup</td>
+                    <td>11:40am</td>
+                    <td>1</td>
+                    <td>Pending</td>
+                  </tr>
+                  <tr class="modal-view">
+                    <td>Delivery</td>
+                    <td>11:10am</td>
+                    <td>3</td>
+                    <td>Shipping</td>
+                  </tr>
+                  <tr class="modal-view">
+                    <td>Devlivery</td>
+                    <td>10:40am</td>
+                    <td>15</td>
+                    <td>Pending</td>
+                  </tr>
+                  <tr class="modal-view">
+                    <td>Pickup</td>
+                    <td>11:40am</td>
+                    <td>1</td>
+                    <td>Pending</td>
+                  </tr>
+                  <tr class="modal-view">
+                    <td>Delivery</td>
+                    <td>11:10am</td>
+                    <td>3</td>
+                    <td>Shipping</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-      </div>  
+      </div>
+      <div class="column">
+        <span>Todays Sales History</span>
+        <div class="box">
+          <div id="tester" style="width:90%;height:250px;"></div>
+        </div>
+      </div>
     </div>
-    <div class="column">
-        <div id="tester" style="width:90%;height:250px;"></div>
-    </div>
-  </div>
-</div>
-  <script src="test.js"></script>
+    <script src="app.js"></script>
+    <script src="test.js"></script>
 </body>
 
 </html>
