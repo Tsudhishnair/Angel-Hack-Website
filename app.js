@@ -8,11 +8,11 @@ $(function () {
   const now = new Date();
 
   function mapStatus(num) {
-    if (num === 1) {
+    if (num === "0") {
+      return "Cancelled"
+    } else if (num === "1") {
       return "Order Arrived"
-    } else if (num === 2) {
-      return "Packing"
-    } else if (num === 3) {
+    } else if (num === "2") {
       return "Bag Packed"
     }
   }
@@ -49,6 +49,10 @@ $(function () {
 
     $('#accept').click(function() {
       orderRef.child('status').set(2)
+    })
+
+    $('#decline').click(function() {
+      orderRef.child('status').set(0)
     })
 
     // for (key in items) {
