@@ -7,7 +7,7 @@ $(function () {
     $('.modal').removeClass('is-active')
   })
 
-  var shopRef = firebase.database().ref('/Shops/1')
+  var shopRef = firebase.databclearase().ref('/Shops/1')
   var orderRef = firebase.database().ref('/orders')
 
   var $itemTable = $('#shop-items');
