@@ -20,11 +20,23 @@ $(function () {
   orderRef.once('value').then(snapshot => {
     var val = snapshot.val();
 
+    console.log(val);
+
+
     var items = snapshot.val().products
     let count = 0;
+    let itemList = [];
+    let countList = [];
+    let finalPrice = val.price;
     for (key in items) {
       count += Number(items[key])
+      itemList.push(Number(key))
+      countList.push(Number(items[key]))
     }
+
+    console.log(itemList);
+    console.log(countList);
+    
 
     $itemTable.prepend(`<tr class="modal-view"><td>Pickup</td><td>${now.toLocaleTimeString()}</td><td>${count}</td><td>${mapStatus(val.status)}</td></tr>`)
 
@@ -36,9 +48,29 @@ $(function () {
       $('.modal').removeClass('is-active')
     })
 
-    for (key in items) {
-      var itemRef = productRef.child('/key')
-      $('#items-shop').append(`<tr><td>${key}</td><td>${itemRef.name}</td><td>${items[key]}</td><td>${items[key] * itemRef.offer_price}</td></tr>`)
+    $('#accept').click(function() {
+      orderRef.set({
+        status: 2
+      })
+    })
+
+    // for (key in items) {
+    //   console.log(key);
+
+    for (key in itemList) {      
+      console.log(key);
+      
+      var itemRef = productRef.child(itemList[key]).once('value').then(snap => {
+        console.log(snap.val().name);
+
+        $('#items-shop').append(`<tr><td>${$(this).parent().siblings().length}</td><td>${snap.val().name}</td><td>${(Math.floor(Math.random() * 10 + 1))}</td><td>${snap.val().offer_price}</td></tr>`)
+      })
+
+      console.log(itemList[key])
     }
+
+    $('#total').text(finalPrice)
+
+    // }
   })
 });
