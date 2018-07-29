@@ -11,6 +11,8 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
   <script>
@@ -30,7 +32,7 @@
 </head>
 
 <body>
-  <nav class="navbar hero" role="navigation" aria-label="main navigation">
+  <nav class="navbar " role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a href="#" class="navbar-item">
         <span class="dash-brand">SpeeBuy</span>
@@ -42,66 +44,109 @@
       </a>
     </div>
     <div class="navbar-menu">
-
+      <div class="navbar-start">
+        <a href="#" class="navbar-item">
+          <span class="navbar-menu-list">
+            <i class="fas fa-home"></i>
+            Dashboard</span>
+        </a>
+        <a href="#" class="navbar-item">
+          <span class="navbar-menu-list">
+            <i class="fas fa-pallet"></i> Orders </span>
+        </a>
+        <a href="#" class="navbar-item">
+          <span class="navbar-menu-list">
+            <i class="fas fa-history"></i> History </span>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a href="#" class="navbar-item">
+          <span class="navbar-menu-list"> Administrator </span>&nbsp;
+          <i class="fas fa-user fa-medium" style="color: whitesmoke"></i>
+        </a>
+      </div>
     </div>
   </nav>
-  <div class="columns section is-centered" style="margin:auto;">
-    <div class="column  has-text-centered">
+  <div class="columns" style="margin-top: 2rem;">
+    <div class="column is-offset-1 is-10">
       <div class="box">
         <div class="columns">
-          <div class="column ">
-            <i class="far fa-money-bill-alt fa-lg"></i>
+          <div class="column">
+            <i class="fas fa-store"></i> &nbsp;
+            <span class="has-text-weight-semibold">3 New Orders </span>
           </div>
-          <div class="column has-text-centered">$8213
+          <div class="column has-text-centered is-5">
+            <span class="has-text-weight-semibold" style="letter-spacing: 0.4rem;">More SuperMarket</span>
+          </div>
+          <div class="column has-text-right">
+            <i class="fas fa-cog"></i> &nbsp;
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columns section is-centered">
+    <div class="column  has-text-centered">
+      <div class="box box-style">
+        <div class="columns" style="padding:8px;">
+          <div class="column ">
+            <i class="far fa-money-bill-alt fa-lg has-text-info"></i>
+          </div>
+          <div class="column has-text-centered">
+            <span class="has-text-info has-text-weight-semibold"> $8213</span>
             <br> Total&nbsp;Transcation
           </div>
           <div class="column">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h has-text-info"></i>
           </div>
         </div>
       </div>
     </div>
     <div class="column has-text-centered">
-      <div class="box">
-        <div class="columns">
+      <div class="box box-style">
+        <div class="columns" style="padding:8px;">
           <div class="column ">
-            <i class="fas fa-star-half-alt fa-lg"></i>
+            <i class="fas fa-star-half-alt fa-lg has-text-primary"></i>
           </div>
-          <div class="column has-text-centered">4.3
+          <div class="column has-text-centered">
+            <span class="has-text-primary has-text-weight-semibold">4.3</span>
             <br> Shop&nbsp;Rating
           </div>
           <div class="column">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h has-text-primary"></i>
           </div>
         </div>
       </div>
     </div>
     <div class="column has-text-centered">
-      <div class="box">
-        <div class="columns">
+      <div class="box box-style">
+        <div class="columns" style="padding:8px;">
           <div class="column ">
-            <i class="fas fa-truck fa-lg"></i>
+            <i class="fas fa-truck fa-lg has-text-danger"></i>
           </div>
-          <div class="column has-text-centered">Active
+          <div class="column has-text-centered">
+            <span class="has-text-danger has-text-weight-semibold">Active</span>
             <br> Delivery&nbsp;Service
           </div>
           <div class="column">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h has-text-danger"></i>
           </div>
         </div>
       </div>
     </div>
     <div class="column  has-text-centered ">
-      <div class="box">
-        <div class="columns">
+      <div class="box box-style ">
+        <div class="columns" style="padding:8px;">
           <div class="column ">
-            <i class="far fa-clock fa-lg"></i>
+            <i class="far fa-clock fa-lg has-text-info"></i>
           </div>
-          <div class="column has-text-centered">Online
+          <div class="column has-text-centered">
+            <span class="has-text-info has-text-weight-semibold">Online</span>
             <br> Speebuy&nbsp;Service
           </div>
           <div class="column">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h has-text-info "></i>
           </div>
         </div>
       </div>
@@ -116,7 +161,7 @@
         <button class="delete modal-close-btn" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <table class="table is-fullwidth is-striped">
+        <table class="table is-fullwidth is-hoverable is-striped">
           <thead>
             <tr>
               <th>Id</th>
@@ -171,69 +216,69 @@
 
   <!-- *******************-->
 
-  <div class="section">
-    <div class="columns is-centered  ">
-      <div class="column is-offset-2">
-        <div class="columns is-multiline ">
-          <div class="column is-narrow ">
-            <div class="box">
-              <span class="has-text-weight-semibold"> Current Order</span>
-              <table class="table is-striped">
-                <thead>
-                  <tr>
-                    <th>Method</th>
-                    <th>Time</th>
-                    <th>Item's count</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="modal-view">
-                    <td>Delivery</td>
-                    <td>10:40am</td>
-                    <td>15</td>
-                    <td>Pending</td>
-                  </tr>
-                  <tr class="modal-view">
-                    <td>Pickup</td>
-                    <td>11:40am</td>
-                    <td>1</td>
-                    <td>Pending</td>
-                  </tr>
-                  <tr class="modal-view">
-                    <td>Delivery</td>
-                    <td>11:10am</td>
-                    <td>3</td>
-                    <td>Shipping</td>
-                  </tr>
-                  <tr class="modal-view">
-                    <td>Devlivery</td>
-                    <td>10:40am</td>
-                    <td>15</td>
-                    <td>Pending</td>
-                  </tr>
-                  <tr class="modal-view">
-                    <td>Pickup</td>
-                    <td>11:40am</td>
-                    <td>1</td>
-                    <td>Pending</td>
-                  </tr>
-                  <tr class="modal-view">
-                    <td>Delivery</td>
-                    <td>11:10am</td>
-                    <td>3</td>
-                    <td>Shipping</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+
+  <div class="columns is-centered  ">
+    <div class="column is-offset-1">
+      <div class="columns is-multiline ">
+        <div class="column is-narrow ">
+          <div class="card" style="border: 2px solid black;padding: 10px;">
+            <span class="has-text-weight-semibold"> Current Order</span>
+            <table class="table is-striped">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Time</th>
+                  <th>Item's count</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="modal-view">
+                  <td>Delivery</td>
+                  <td>10:40am</td>
+                  <td>15</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="modal-view">
+                  <td>Pickup</td>
+                  <td>11:40am</td>
+                  <td>1</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="modal-view">
+                  <td>Delivery</td>
+                  <td>11:10am</td>
+                  <td>3</td>
+                  <td>Shipping</td>
+                </tr>
+                <tr class="modal-view">
+                  <td>Devlivery</td>
+                  <td>10:40am</td>
+                  <td>15</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="modal-view">
+                  <td>Pickup</td>
+                  <td>11:40am</td>
+                  <td>1</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="modal-view">
+                  <td>Delivery</td>
+                  <td>11:10am</td>
+                  <td>3</td>
+                  <td>Shipping</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-      <div class="column">
-        <div class="columns is-multiline ">
-
-        </div>
+      ]
+    </div>
+    <div class="column">
+      <div class="columns is-multiline ">
+        <div class="myDiv"></div>
       </div>
     </div>
   </div>

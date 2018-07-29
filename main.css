@@ -63,7 +63,8 @@
 }
 .navbar
 {
-  background-color: #f8913dd8 !important;
+  background-color: #f3a909d8 !important;
+  background: linear-gradient(to right, rgba(224, 92, 68, 0.938) , rgb(255, 187, 0)) !important; 
 }
 .dash-brand
 {
@@ -81,6 +82,16 @@
 }
 .dash-content
 {
-  background-color: rgb(243, 235, 235);
+  background-color: rgb(182, 170, 170) !important;
   margin-top: 2rem;
+}
+.navbar-menu-list
+{
+  color: whitesmoke;
+  font-weight: bold;
+}
+.box-style
+{
+  box-shadow:2px 4px 6px 4px #c3bfa7 !important;
+  
 }
