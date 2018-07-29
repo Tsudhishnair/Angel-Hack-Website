@@ -36,9 +36,8 @@ $(function () {
 
     console.log(itemList);
     console.log(countList);
-    
 
-    $itemTable.prepend(`<tr class="modal-view"><td>Pickup</td><td>${now.toLocaleTimeString()}</td><td>${count}</td><td>${mapStatus(val.status)}</td></tr>`)
+    $itemTable.prepend(`<tr class="modal-view"><td>${val.pickup ? "Pickup" : "Delivery"}</td><td>${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} PM </td><td>${count}</td><td>${mapStatus(val.status)}</td><td class="button vibtn has-background-info has-text-white-bis has-text-weight-semibold" style="margin:0.7rem;">View</td></tr>`)
 
     $('.modal-view').click(function () {
       $('.modal').addClass('is-active')
@@ -61,7 +60,7 @@ $(function () {
       var itemRef = productRef.child(itemList[key]).once('value').then(snap => {
         console.log(snap.val().name);
 
-        $('#items-shop').append(`<tr><td>${$(this).parent().siblings().length}</td><td>${snap.val().name}</td><td>${(Math.floor(Math.random() * 10 + 1))}</td><td>${snap.val().offer_price}</td></tr>`)
+        $('#items-shop').append(`<tr><td>${snap.val().name}</td><td>${(Math.floor(Math.random() * 10 + 1))}</td><td>${snap.val().offer_price}</td></tr>`)
       })
 
       console.log(itemList[key])
