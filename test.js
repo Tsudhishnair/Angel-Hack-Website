@@ -21,8 +21,3 @@ Plotly.plot( TESTER, [{
       $('.modal').removeClass('is-active')
     })
   });
-
-
-
-  
-document.
